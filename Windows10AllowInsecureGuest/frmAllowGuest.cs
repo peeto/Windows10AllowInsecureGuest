@@ -41,10 +41,8 @@ namespace Windows10AllowInsecureGuest
                    MessageBox.Show("Could not load registry key", "Error");
                 }
                 return -1;
-                //return Registry.LocalMachine.GetValue("SYSTEM\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters\\AllowInsecureGuestAuth").ToString() == "1" ? 1 : 0;
-                //return Registry.LocalMachine.GetValue("HKLM\\SYSTEM\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters\\AllowInsecureGuestAuth").ToString() == "1" ? 1 : 0;
             }
-            catch (Exception ex)  //just for demonstration...it's always best to handle specific exceptions
+            catch (Exception ex)
             {
                 return -1;
             }
@@ -64,9 +62,6 @@ namespace Windows10AllowInsecureGuest
                 {
                     MessageBox.Show("Could not load registry key", "Error");
                 }
-
-                //Registry.LocalMachine.SetValue("SYSTEM\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters\\AllowInsecureGuestAuth", setting);
-                //Registry.LocalMachine.SetValue("HKLM\\SYSTEM\\CurrentControlSet\\Services\\LanmanWorkstation\\Parameters\\AllowInsecureGuestAuth", setting);
             }
             catch (System.UnauthorizedAccessException ex)
             {
