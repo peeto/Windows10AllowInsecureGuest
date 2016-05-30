@@ -1,0 +1,3 @@
+- [ ] Add third "unset" state. The app will detect if it is actually running on Windows 10 and advise the user of the consequences based on that
+- [ ] Instead of warning the user to be an admin, throw in horrible amounts of UAC
+- [ ] Stop thinking about GTK/qt compatibility
